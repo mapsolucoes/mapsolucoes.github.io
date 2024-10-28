@@ -152,6 +152,13 @@
         .cta p a:hover {
             text-decoration: underline;
         }
+        /* Adicionando número de telefone e email na área de contato */
+        .cta .contact-info {
+            margin-top: 20px;
+        }
+        .cta .contact-info p {
+            margin: 5px 0;
+        }
         /* Rodapé */
         footer {
             background-color: #737373;
@@ -159,12 +166,15 @@
             text-align: center;
             padding: 10px;
             position: relative;
+            font-size: 14px; /* Adiciona o tamanho da fonte */
         }
         footer span::before {
             content: url('favicon.png');
             display: inline-block;
             vertical-align: middle;
             margin-right: 5px;
+            width: 16px; /* Ajusta o tamanho da imagem */
+            height: 16px; /* Ajusta o tamanho da imagem */
         }
     </style>
 </head>
@@ -206,6 +216,10 @@
         <h2>Entre em Contato Agora</h2>
         <a href="https://wa.me/5511942603053" target="_blank">Converse pelo WhatsApp</a>
         <p>Ou visite nossa página no Instagram: <a href="https://www.instagram.com/map_solucoes" target="_blank">@map_solucoes</a></p>
+        <div class="contact-info">
+            <p>Telefone: 11942603053</p>
+            <p>Email: <a href="mailto:contato@mapsolucoes.net">contato@mapsolucoes.net</a></p>
+        </div>
     </section>
     <!-- Rodapé -->
     <footer>
