@@ -1,0 +1,61 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navegação */
+nav {
+    background-color: #737373;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+nav ul li a:hover {
+    color: #ff9801;
+}
+
+/* Efeito de rolagem suave */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Seções */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#home {
+    background-color: #f9f9f9;
+}
+
+#sobre-nos {
+    background-color: #eaeaea;
+}
+
+#servicos {
+    background-color: #ffffff;
+}
+
+#contato {
+    background-color: #f1f1f1;
+}
