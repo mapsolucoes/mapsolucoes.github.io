@@ -1,187 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <link rel="icon" href="favicon.png" type="image/png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>M.A.P SOLUÇÕES</title>
-    
-    <!-- Importando as fontes Poppins e Roboto -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #ffffff;
-            color: #737373;
-            background-image: url('imgback.png'); /* Imagem de fundo */
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-
-        /* Hero Section (Seção principal) */
-        .hero {
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            color: #ffffff;
-            background: rgba(0, 0, 0, 0.6); /* Adiciona uma sobreposição escura sobre a imagem */
-            padding: 0 20px;
-        }
-
-        .hero h1 {
-            font-family: 'Poppins', sans-serif;
-            font-size: 3em;
-            margin: 0;
-            color: #000000; /* Cor preta para o título */
-        }
-
-        .hero p {
-            font-size: 1.2em;
-            margin: 20px 0;
-        }
-
-        .hero a {
-            background-color: #ff9801;
-            color: white;
-            padding: 15px 30px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 1.2em;
-            font-weight: bold;
-            margin-top: 20px;
-        }
-
-        .hero a:hover {
-            background-color: #e68a00;
-        }
-
-        /* Logo Redonda no Cabeçalho */
-        .logo {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 20px;
-        }
-
-        /* Seção de Benefícios */
-        .benefits {
-            background-color: #ffffff;
-            padding: 50px 20px;
-            text-align: center;
-        }
-
-        .benefits h2 {
-            font-family: 'Poppins', sans-serif;
-            color: #000000;
-            font-size: 2.2em;
-        }
-
-        .benefits p {
-            font-size: 1.1em;
-            color: #737373;
-            margin: 20px auto;
-            max-width: 700px;
-        }
-
-        .benefits .benefit-item {
-            margin: 20px 0;
-        }
-
-        /* Seção de Contato */
-        .cta {
-            background-color: #737373;
-            padding: 50px 20px;
-            text-align: center;
-            color: white;
-        }
-
-        .cta h2 {
-            font-family: 'Poppins', sans-serif;
-            font-size: 2em;
-        }
-
-        .cta a {
-            background-color: #ff9801;
-            color: white;
-            padding: 15px 30px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 1.2em;
-            font-weight: bold;
-            margin-top: 20px;
-            display: inline-block;
-        }
-
-        .cta a:hover {
-            background-color: #e68a00;
-        }
-
-        .cta p {
-            font-size: 1.2em;
-            margin-top: 20px;
-        }
-
-        .cta p a {
-            color: #ff9801;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .cta p a:hover {
-            text-decoration: underline;
-        }
-
-        /* Rodapé */
-        footer {
-            background-color: #737373;
-            color: #ffffff;
-            text-align: center;
-            padding: 10px;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> <!-- Link para o arquivo CSS -->
 </head>
 <body>
-    <!-- Hero Section -->
-    <div class="hero">
-        <!-- Adicionando a Logo Redonda Centralizada -->
-        <img src="perfil.png" alt="Logo M.A.P Soluções" class="logo">
-        <h1>M.A.P SOLUÇÕES</h1>
-        <p>Do sol à tomada, conectamos você!</p>
-        <a href="https://wa.me/5511942603053" target="_blank">Contate-nos pelo WhatsApp</a>
-    </div>
+    <!-- Navegação -->
+    <nav>
+        <ul>
+            <li><a href="#home">Início</a></li>
+            <li><a href="#sobre-nos">Sobre Nós</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
 
-    <!-- Seção de Benefícios/Serviços -->
-    <section class="benefits">
+    <!-- Seção Início -->
+    <section id="home">
+        <h1>Bem-vindo à M.A.P Soluções</h1>
+        <p>Do sol à tomada, conectamos você.</p>
+    </section>
+
+    <!-- Seção Sobre Nós -->
+    <section id="sobre-nos">
+        <h2>Sobre Nós</h2>
+        <p>Nossa missão é fornecer soluções inovadoras e sustentáveis em energia e tecnologia.</p>
+    </section>
+
+    <!-- Seção Serviços -->
+    <section id="servicos">
         <h2>Nossos Serviços</h2>
-        <div class="benefit-item">
-            <p>✔ Consultoria de TI especializada para otimizar seus processos.</p>
-        </div>
-        <div class="benefit-item">
-            <p>✔ Suporte técnico para empresas de todos os tamanhos.</p>
-        </div>
-        <div class="benefit-item">
-            <p>✔ Soluções inovadoras para aumentar a eficiência do seu negócio.</p>
-        </div>
+        <p>Oferecemos consultoria e suporte técnico especializado em diversas áreas.</p>
     </section>
 
-    <!-- Seção de Call-to-Action (Contato) -->
-    <section class="cta">
-        <h2>Entre em Contato Agora</h2>
-        <a href="https://wa.me/5511942603053" target="_blank">Converse pelo WhatsApp</a>
-        <p>Ou visite nossa página no Instagram: <a href="https://www.instagram.com/map_solucoes" target="_blank">@map_solucoes</a></p>
+    <!-- Seção Contato -->
+    <section id="contato">
+        <h2>Entre em Contato</h2>
+        <p>Fale conosco via WhatsApp ou visite nossa página no Instagram.</p>
     </section>
-
-    <!-- Rodapé -->
-    <footer>
-        © 2024 M.A.P SOLUÇÕES - Todos os direitos reservados
-    </footer>
 </body>
 </html>
