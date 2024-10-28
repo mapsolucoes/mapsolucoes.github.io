@@ -1,151 +1,160 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <link rel="icon" href="favicon.png" type="image/png">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M.A.P SOLUÇÕES</title>
-    <!-- Importando as fontes Poppins e Roboto -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #ffffff;
-            color: #737373;
-            background-image: url('imgback.png'); /* Imagem de fundo */
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            position: relative;
-        }
-        body::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.6); /* Máscara preta */
-            z-index: -1;
-        }
-        /* Estilo do menu */
-        nav {
-            background-color: #737373;
-            padding: 10px;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-        }
-        nav ul li {
-            margin: 0 15px;
-        }
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1.1em;
-        }
-        nav ul li a:hover {
-            color: #ff9801;
-        }
-        /* Efeito de rolagem suave */
-        html {
-            scroll-behavior: smooth;
-        }
-        /* Seções */
-        section {
-            padding: 60px 20px;
-            text-align: center;
-        }
-        #home {
-            background-color: #f9f9f9;
-        }
-        #sobre-nos {
-            background-color: #eaeaea;
-        }
-        #servicos {
-            background-color: #ffffff;
-        }
-        #contato {
-            background-color: #f1f1f1;
-        }
-        /* Rodapé */
-        footer {
-            background-color: #737373;
-            color: #ffffff;
-            text-align: center;
-            padding: 10px;
-            position: relative;
-            font-size: 14px; /* Adiciona o tamanho da fonte */
-        }
-        footer span::before {
-            content: url('favicon.png');
-            display: inline-block;
-            vertical-align: middle;
-            margin-right: 5px;
-            width: 14px; /* Ajusta o tamanho da imagem */
-            height: 14px; /* Ajusta o tamanho da imagem */
-        }
-    </style>
-</head>
-<body>
-    <!-- Menu de Navegação -->
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#sobre-nos">Sobre Nós</a></li>
-            <li><a href="#servicos">Serviços</a></li>
-            <li><a href="#contato">Contato</a></li>
-        </ul>
-    </nav>
-    <!-- Seção Home -->
-    <section id="home">
-        <div class="hero">
-            <!-- Adicionando a Logo Redonda Centralizada -->
-            <img src="perfil.png" alt="Logo M.A.P Soluções" class="logo">
-            <h1>M.A.P SOLUÇÕES</h1>
-            <p><i>Do sol à tomada, conectamos você!</i></p>
-            <a href="https://wa.me/5511942603053" target="_blank">Contate-nos pelo WhatsApp</a>
-        </div>
-    </section>
-    <!-- Seção Sobre Nós -->
-    <section id="sobre-nos" class="benefits">
-        <h2>Sobre Nós</h2>
-        <p>Conheça a M.A.P SOLUÇÕES, nossa missão é oferecer mão de obra qualificada e com preço justo, utilizando a energia solar para garantir um futuro sustentável para o planeta. Especializados em instalações de energia solar e elétrica em geral, também trabalhamos com cabeamento estruturado, rede de computadores e CFTV.</p>
-    </section>
-    <!-- Seção Serviços -->
-    <section id="servicos" class="benefits">
-        <h2>Nossos Serviços</h2>
-        <div class="benefit-item">
-            <p>✔ Consultoria de TI especializada para otimizar seus processos.</p>
-        </div>
-        <div class="benefit-item">
-            <p>✔ Suporte técnico para empresas de todos os tamanhos.</p>
-        </div>
-        <div class="benefit-item">
-            <p>✔ Soluções inovadoras para aumentar a eficiência do seu negócio.</p>
-        </div>
-    </section>
-    <!-- Seção Contato -->
-    <section id="contato" class="cta">
-        <h2>Entre em Contato Agora</h2>
-        <a href="https://wa.me/5511942603053" target="_blank">Converse pelo WhatsApp</a>
-        <p>Ou visite nossa página no Instagram: <a href="https://www.instagram.com/map_solucoes" target="_blank">@map_solucoes</a></p>
-        <div class="contact-info">
-            <p>Telefone: 11942603053</p>
-            <p>Email: <a href="mailto:contato@mapsolucoes.net">contato@mapsolucoes.net</a></p>
-        </div>
-    </section>
-    <!-- Rodapé -->
-    <footer>
-        <span></span>
-        © 2024 M.A.P SOLUÇÕES - Todos os direitos reservados
-    </footer>
-</body>
-</html>
+<style>
+    body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #ffffff;
+        color: #737373;
+        background-image: url('imgback.png'); /* Imagem de fundo */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+    body::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6); /* Máscara preta */
+        z-index: -1;
+    }
+    /* Estilo do menu */
+    nav {
+        background-color: #737373;
+        padding: 15px;
+        text-align: center;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000; /* Garante que o menu fique acima do conteúdo */
+    }
+    nav a {
+        color: #ffffff;
+        text-decoration: none;
+        margin: 0 15px;
+        font-weight: bold;
+        transition: color 0.3s;
+    }
+    nav a:hover {
+        color: #ff9801;
+    }
+    /* Hero Section (Seção principal) */
+    .hero {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #ffffff;
+        padding: 0 20px;
+        margin-top: 60px; /* Adiciona margem para o menu fixo */
+    }
+    .hero h1 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 3em;
+        margin: 0;
+        color: #000000; /* Cor preta para o título */
+    }
+    .hero p {
+        font-size: 1.2em;
+        margin: 20px 0;
+    }
+    .hero a {
+        background-color: #ff9801;
+        color: white;
+        padding: 15px 30px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-top: 20px;
+    }
+    .hero a:hover {
+        background-color: #e68a00;
+    }
+    /* Logo Redonda no Cabeçalho */
+    .logo {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 20px;
+    }
+    /* Seção de Benefícios */
+    .benefits {
+        background-color: #ffffff;
+        padding: 50px 20px;
+        text-align: center;
+        margin-top: 20px; /* Para não colidir com o menu */
+    }
+    .benefits h2 {
+        font-family: 'Poppins', sans-serif;
+        color: #000000;
+        font-size: 2.2em;
+    }
+    .benefits p {
+        font-size: 1.1em;
+        color: #737373;
+        margin: 20px auto;
+        max-width: 700px;
+    }
+    .benefits .benefit-item {
+        margin: 20px 0;
+    }
+    /* Seção de Contato */
+    .cta {
+        background-color: #737373;
+        padding: 50px 20px;
+        text-align: center;
+        color: white;
+        margin-top: 20px; /* Para não colidir com a seção anterior */
+    }
+    .cta h2 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 2em;
+    }
+    .cta a {
+        background-color: #ff9801;
+        color: white;
+        padding: 15px 30px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-top: 20px;
+        display: inline-block;
+    }
+    .cta a:hover {
+        background-color: #e68a00;
+    }
+    .cta p {
+        font-size: 1.2em;
+        margin-top: 20px;
+    }
+    .cta p a {
+        color: #ff9801;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .cta p a:hover {
+        text-decoration: underline;
+    }
+    /* Rodapé */
+    footer {
+        background-color: #737373;
+        color: #ffffff;
+        text-align: center;
+        padding: 10px;
+        position: relative;
+    }
+    footer::before {
+        content: url('favicon.png');
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 5px;
+    }
+</style>
