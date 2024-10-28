@@ -6,21 +6,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>M.A.P SOLUÇÕES</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }
-        img { max-width: 100px; }
-        .carousel { width: 100%; max-width: 500px; margin: 20px auto; }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #737373;
+        }
+
+        /* Estilos do Cabeçalho */
+        header {
+            background-color: #000000;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header img {
+            max-width: 120px;
+        }
+
+        header h1 {
+            margin: 10px 0 0;
+            font-size: 2em;
+            color: #ffffff;
+        }
+
+        /* Estilos da Seção Principal */
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .carousel {
+            width: 100%;
+            max-width: 500px;
+            margin: 20px auto;
+        }
+
+        /* Estilos do Botão WhatsApp */
+        .whatsapp-btn {
+            background-color: #ff9801;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .whatsapp-btn:hover {
+            background-color: #e68a00;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #000000;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
     </style>
 </head>
 <body>
-    <h1>Bem-vindo M.A.P SOLUÇÕES</h1>
-    <img src="logoMAP.png" alt="Logo da Empresa">
-    <div class="carousel">
-        <!-- Embed do carrossel do Instagram -->
-        <!-- LightWidget WIDGET -->
-        <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/a243ddbe9f065c13b285f90a3e7dbdb8.html" scrolling="yes" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
-    </div>
-    <a href="https://wa.me/5511942603053" target="_blank">
-        <button>Contate-nos pelo WhatsApp</button>
-    </a>
+    <!-- Cabeçalho com Logo e Nome da Empresa -->
+    <header>
+        <img src="logoMAP.png" alt="Logo da Empresa">
+        <h1>Bem-vindo à M.A.P SOLUÇÕES</h1>
+    </header>
+
+    <!-- Seção Principal com Carrossel e Botão de WhatsApp -->
+    <main>
+        <div class="carousel">
+            <!-- Embed do carrossel do Instagram -->
+            <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+            <iframe src="//lightwidget.com/widgets/a243ddbe9f065c13b285f90a3e7dbdb8.html" scrolling="yes" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+        </div>
+
+        <!-- Botão de WhatsApp -->
+        <a href="https://wa.me/5511942603053" target="_blank" class="whatsapp-btn">
+            Contate-nos pelo WhatsApp
+        </a>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        © 2024 M.A.P SOLUÇÕES - Todos os direitos reservados
+    </footer>
 </body>
 </html>
