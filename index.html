@@ -22,6 +22,29 @@
             background-repeat: no-repeat;
         }
 
+        /* Estilo do menu */
+        nav {
+            background-color: #737373;
+            padding: 15px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000; /* Garante que o menu fique acima do conteúdo */
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff9801;
+        }
+
         /* Hero Section (Seção principal) */
         .hero {
             height: 100vh;
@@ -33,6 +56,7 @@
             color: #ffffff;
             background: rgba(0, 0, 0, 0.6); /* Adiciona uma sobreposição escura sobre a imagem */
             padding: 0 20px;
+            margin-top: 60px; /* Adiciona margem para o menu fixo */
         }
 
         .hero h1 {
@@ -76,6 +100,7 @@
             background-color: #ffffff;
             padding: 50px 20px;
             text-align: center;
+            margin-top: 20px; /* Para não colidir com o menu */
         }
 
         .benefits h2 {
@@ -101,6 +126,7 @@
             padding: 50px 20px;
             text-align: center;
             color: white;
+            margin-top: 20px; /* Para não colidir com a seção anterior */
         }
 
         .cta h2 {
@@ -149,6 +175,13 @@
     </style>
 </head>
 <body>
+    <!-- Menu de Navegação -->
+    <nav>
+        <a href="#sobre">Sobre Nós</a>
+        <a href="#servicos">Nossos Serviços</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
     <!-- Hero Section -->
     <div class="hero">
         <!-- Adicionando a Logo Redonda Centralizada -->
@@ -158,8 +191,14 @@
         <a href="https://wa.me/5511942603053" target="_blank">Contate-nos pelo WhatsApp</a>
     </div>
 
+    <!-- Seção de Sobre Nós -->
+    <section id="sobre" class="benefits">
+        <h2>Sobre Nós</h2>
+        <p>Conheça a M.A.P SOLUÇÕES, uma empresa dedicada a fornecer as melhores soluções em tecnologia.</p>
+    </section>
+
     <!-- Seção de Benefícios/Serviços -->
-    <section class="benefits">
+    <section id="servicos" class="benefits">
         <h2>Nossos Serviços</h2>
         <div class="benefit-item">
             <p>✔ Consultoria de TI especializada para otimizar seus processos.</p>
@@ -173,7 +212,7 @@
     </section>
 
     <!-- Seção de Call-to-Action (Contato) -->
-    <section class="cta">
+    <section id="contato" class="cta">
         <h2>Entre em Contato Agora</h2>
         <a href="https://wa.me/5511942603053" target="_blank">Converse pelo WhatsApp</a>
         <p>Ou visite nossa página no Instagram: <a href="https://www.instagram.com/map_solucoes" target="_blank">@map_solucoes</a></p>
