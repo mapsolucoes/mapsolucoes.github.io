@@ -27,6 +27,7 @@ nav {
     z-index: 1000; /* Garante que o menu fique acima do conteúdo */
     display: flex;
     justify-content: center; /* Centraliza o menu */
+    flex-wrap: wrap;
 }
 nav .menu-icon {
     width: 24px;
