@@ -1,1 +1,209 @@
-body { font-family: 'Poppins', sans-serif; margin: 0; padding: 0; } /* Navegação */ nav { background-color: #737373; padding: 10px; } nav ul { list-style: none; padding: 0; margin: 0; display: flex; justify-content: center; } nav ul li { margin: 0 15px; } nav ul li a { color: white; text-decoration: none; font-weight: bold; font-size: 1.1em; } nav ul li a:hover { color: #ff9801; } /* Efeito de rolagem suave */ html { scroll-behavior: smooth; } /* Seções */ section { padding: 60px 20px; text-align: center; } #home { background-color: #f9f9f9; } #sobre-nos { background-color: #eaeaea; } #servicos { background-color: #ffffff; } #contato { background-color: #f1f1f1; }
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #737373;
+}
+
+/* Efeito de rolagem suave */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Estilo do menu */
+nav {
+    background-color: #737373;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+nav .menu-icon {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff9801;
+}
+
+/* Hero Section com máscara preta */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    padding: 0 20px;
+    margin-top: 60px;
+    background-image: url('imgback.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.hero * {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3em;
+    margin: 0;
+    color: #000000;
+   -webkit-text-stroke: 0.3px #ffffff
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin: 20px 0;
+    font-style: italic;
+}
+
+.hero a {
+    background-color: #ff9801;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.hero a:hover {
+    background-color: #e68a00;
+}
+
+/* Logo Redonda no Cabeçalho */
+.logo {
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+/* Seções de Conteúdo */
+.benefits {
+    background-color: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.benefits h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #000000;
+    font-size: 2.2em;
+}
+
+.benefits p {
+    font-size: 1.1em;
+    color: #737373;
+    margin: 20px auto;
+    max-width: 700px;
+}
+
+.benefits .benefit-item {
+    margin: 20px 0;
+}
+
+/* Seção de Contato */
+.cta {
+    background-color: #737373;
+    padding: 50px 20px;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+
+.cta h2 {
+     line-height: 1;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+}
+
+/* Estilos para os detalhes de contato */
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.contact-details p {
+    line-height: 1; /* ou um valor menor, como 1.1 ou 1 */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 100%;
+    max-width: 300px;
+    color: white;
+}
+
+.contact-details img {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+}
+
+/* Estilo para links de contato simples */
+.cta a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.cta a:hover {
+    text-decoration: underline;
+    color: #e68a00;
+}
+
+/* Rodapé */
+footer {
+    background-color: #737373;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.footer-icon {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
