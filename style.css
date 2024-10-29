@@ -101,6 +101,12 @@ nav a:hover {
 .hero a:hover {
     background-color: #e68a00;
 }
+.wpp-icon {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle; /* Alinha verticalmente a imagem com o texto */
+    margin-right: 8px; /* Espaço entre a imagem e o texto */
+}
 /* Logo Redonda no Cabeçalho */
 .logo {
     width: 175px;
