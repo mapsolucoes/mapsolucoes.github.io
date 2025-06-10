@@ -132,7 +132,7 @@ nav a:hover {
     width: 100%;
     max-width: 200px; /* Ajuste o tamanho da imagem conforme necessário */
     height: auto;
-    border-radius: 5px; /* Bordas arredondadas nas imagens */
+    border-radius: 50%; /* Bordas arredondadas nas imagens */
     margin-bottom: 10px;
 }
 
