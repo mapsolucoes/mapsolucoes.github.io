@@ -115,6 +115,31 @@ nav a:hover {
     object-fit: cover;
     margin-bottom: 20px;
 }
+/* Estilo para a seção de serviços */
+.service-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.service-item {
+    flex: 1;
+}
+
+.service-item img {
+    width: 100%;
+    max-width: 200px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto;
+    border-radius: 5px; /* Bordas arredondadas nas imagens */
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-size: 1em;
+    color: #737373;
+}
 /* Seções de Conteúdo */
 .benefits {
     background-color: #ffffff;
